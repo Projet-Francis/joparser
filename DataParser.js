@@ -39,7 +39,7 @@ export class DataParser {
 
 
     parseCountry(data){
-        let name = data.querySelector(".elhe7kv4 ").childNodes[0]._rawText
+        let name = data.querySelector(".elhe7kv5 ").childNodes[0]._rawText
         const scores = data.querySelectorAll(".e1oix8v91").map(el => el.childNodes[0]).filter(el => el).map(el => parseInt(el._rawText))
         return [name,...scores]
     }
